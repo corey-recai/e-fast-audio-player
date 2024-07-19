@@ -1,6 +1,6 @@
 // https://developer.mozilla.org/en-US/docs/Web/API/File_System_API#synchronously_reading_and_writing_files_in_opfs
 
-onmessage = async e => {
+const onmessage = async e => {
   // retrieve message sent to work from main script
   const message = e.data;
 
@@ -27,3 +27,5 @@ onmessage = async e => {
   // Always close FileSystemSyncAccessHandle if done.
   accessHandle.close();
 };
+
+console.log("Hello Deno!");
